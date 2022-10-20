@@ -162,6 +162,7 @@ footer{
     gap: 3rem;
     padding: 2.5rem;
     grid-auto-rows: 3;
+    overflow: hidden;
 }
 
 .Bio__flex{
@@ -355,7 +356,7 @@ footer{
 }
 
 .Bio__img{
-    max-width: 50vh;
+    max-width: 100%;
 }
 /*FIN BIO*/
 
