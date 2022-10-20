@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*FUENTES
+font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Noto Serif Malayalam', serif
+*/
+.Titular{
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+.Titular__centro{
+    text-align: center;
+}
+
+h2{
+    background-color: rgb(250, 237, 205);
+}
+
+body{
+    background-color: rgb(204, 213, 174);
+}
+
+.navbar-toggler{
+    color: rgb(120, 100, 82);
+}
+
+/*HEADER*/
+.header {
+    background-color: rgb(212, 163, 115);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.56rem;
+}
+.header__logo{
+    max-width: 18.75rem;
+}
+
+.header__anchor{
+    color: black;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.header__anchor:hover,
+.header__anchor:focus{
+    background-color: rgb(165, 144, 126);
+    color:rgb(204, 213, 174);
+}
+
+
+.header__list {
+    display: flex;
+    gap: 0.8rem;
+    list-style: none;
+}
+
+
+/*FIN HEADER*/
+
+/*MAIN*/
+.hero {
+    background: url("../../img/HERO.jpg")center/cover;
+    background-position: bottom;
+    height: 46.25rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 35rem;
+    grid-template-rows: 5rem 20rem 2rem;
+    padding-top: 9.5rem;
+    padding-left: 6rem;
+}
+
+.hero__Titulo {
+    font-size: 3.13rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__contenido {
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-size: 1.88rem;
+        display: flex;
+        align-items: center;
+        font-weight: 21.88rem;
+    }
+
+.hero__boton {
+        background-color: rgb(250, 237, 205);
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        box-shadow: 5px 5px 5px rgb(212, 163, 115);
+    }
+
+.hero__anchor{
+    color: black;
+    text-decoration: none;
+}
+
+/*FIN Main*/
+
+/*Frase*/
+.Frase {
+    background-color: rgb(212, 163, 115);
+    height: 8.13rem;
+    display: flex;
+    align-items: center;
+}
+
+.Frase__texto {
+    font-family: 'Noto Serif Malayalam', serif;
+    color: white;
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+/*FIN Frase*/
+
+/*Footer*/
+footer{
+    background-color: rgb(120, 100, 82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Fira Sans Condensed', sans-serif;
+    height: 3rem;
+}
+
+.footer__botones {
+    min-width: 37.50rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__botones a{
+        font-size: 1.25rem;
+        width: 1.88rem;
+        height: 1.88rem;
+        line-height: 1.88rem;
+        text-align: center;
+        background-color: rgb(165, 144, 126);
+        color: white;
+        border-radius: 50%;
+        border-style: shadow;
+    }
+/*FIN Footer*/
+
+/*BIOGRAFIA*/
+
+.Bio {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 3rem;
+    padding: 2.5rem;
+    grid-auto-rows: 3;
+}
+
+.Bio__flex{
+    background-color: rgb(250, 237, 205);
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgb(212, 163, 115);
+}
+
+.Bio__reverse {
+    flex-direction: row-reverse;
+}
+
+
+.Bio__img {
+    max-width: 65vh;
+}
+
+.Bio__texto {
+    text-align: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+/*FIN BIO*/
+
+/*Proyectos*/
+.Proyectos {
+    background-color: rgb(204, 213, 174);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    padding: 3rem;
+}
+
+.Proyectos__titulo{
+    text-align: center;
+}
+
+.Proyectos__col {
+    background-color: rgb(250, 237, 205);
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Proyectos__img{
+    width: 100%;
+    padding: 0.5rem;
+    transition: transform .2s;
+}
+
+.Proyectos__img:hover{
+    transform: scale(1.09);
+}
+
+
+.Proyectos__texto{
+    padding: 0.5rem;
+}
+
+/*FIN proyectos*/
+
+/*Contacto*/
+.Contacto {
+    display: inline-block;
+    position: relative;
+}
+
+.Contacto__img {
+    max-width: 50%;
+}
+
+.Contacto__form {
+    position: absolute;
+    top: 28%;
+    left: 68%;
+}
+
+/*Galeria*/
+.Galeria{
+    background-color: rgb(204, 213, 174);
+}
+
+.Galeria__foto {
+    width: 24.5%;
+    margin-top: 4%;
+}
+
+.Galeria__vid {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.Galeria__vid1 {
+    max-width: 44%;
+    margin-left: 28%;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+    /*INDEX*/
+.header {
+    flex-direction: column;
+    }
+
+.hero {
+    grid-template-columns: 22rem;
+    padding-left: 4rem;
+    }
+
+.hero__contenido {
+    font-size: 1.3rem;
+    }
+
+.hero__Titulo {
+    font-size: 2.5rem;
+    }
+
+.Frase__texto {
+    font-size: 1rem;
+    padding: 1.5rem;
+    }
+    /*FIN INDEX*/
+
+    /*BIOGRAFIA*/
+.Bio {
+    padding: 2rem;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    }
+    /*FIN BIO*/
+
+    /*PROYECTOS*/
+.Proyectos {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 2rem;
+    }
+    /*FIN PROYECTOS*/
+}
+
+@media screen and (max-width: 320px) {
+.header__logo {
+    max-width: 15.75rem;
+    }
+
+.header__anchor{
+    font-size: 1rem;
+}
+
+.hero {
+    grid-template-columns: 16rem;
+    padding-left: 2rem;
+    background-position-x: -330px;
+    height: 33rem;
+    padding-top: 0rem;
+    background-color: #ffff;
+    opacity: 0.8;
+}
+
+.hero__Titulo{
+    opacity: 0;
+    }
+
+.hero__contenido {
+    font-size: 1.3rem;
+    color: black;
+    }
+
+.Frase{
+    height: 15rem;
+}
+
+footer{
+    flex-direction: column;
+    height: 4rem;
+    align-items: stretch;
+    }
+
+.footer__botones {
+    min-width: 0rem;    
+    }
+/*FIN INDEX*/
+
+/*BIOGRAFIA*/
+.Bio{
+    grid-template-columns: 270px;
+}
+
+.Bio__flex{
+    flex-direction: column;
+}
+
+.Bio__img{
+    max-width: 50vh;
+}
+/*FIN BIO*/
+
+/*PROYECTOS*/
+.Proyectos {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+}
