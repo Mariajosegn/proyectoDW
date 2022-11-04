@@ -1,0 +1,30 @@
+.header {
+    background-color: $color-rosa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.56rem;
+
+    &__logo{
+        max-width: 18.75rem;
+    }
+    &__list {
+        display: flex;
+        gap: 0.8rem;
+        list-style: none;
+    }
+    &__anchor{
+        color: black;
+        font-size: 1.25rem;
+        text-decoration: none;
+        transition: all 0.5s ease-out;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        
+        &:hover,
+        &:focus{
+            background-color: $color-oscuro;
+            color:rgb(204, 213, 174);
+        }
+    }        
+}

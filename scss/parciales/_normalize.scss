@@ -1,0 +1,20 @@
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Titular__centro{
+    text-align: center;
+}
+
+
+body{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    background-color: black;
+    & h2{
+    background-color: $color-claro;
+}
+}

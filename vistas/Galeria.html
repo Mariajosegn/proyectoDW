@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio artístico de María José como bailarina integral de danza contemporánea">
+    <meta name="keywords" content="Danza, bailarina, contemporáneo, artista">
     <title>Galeria</title>
     <link rel="shortcut icon" href="../img/Favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,40 +13,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Noto+Serif+Malayalam:wght@100;350&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7f0947ced6.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilos/css/styles.css"></a>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="./estilos/css/styles.css">-->
+    <link rel="stylesheet" href="../estilos/css/translated.css">
 </head>
 <body>
     <header class="header">
-        <a  href="../index.html"><img class="header__logo" src="../img/Imagenlogo.png" alt="Logo pagina"></a>
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item"><a class="header__anchor" href="../index.html">Inicio</a></li>
-                <li class="header__item"><a class="header__anchor" href="./Biografia.html">Biografia</a></li>
-                <li class="header__item"><a class="header__anchor" href="./Proyectos.html">Proyectos</a></li>
-                <li class="header__item"><a class="header__anchor" href="#">Galeria</a></li>
-                <li class="header__item"><a class="header__anchor" href="./Contacto.html">Contacto</a></li>
-            </ul>   
+        <a href="../index.html"><img class="header__logo" src="../img/Imagenlogo.png" alt="Logo pagina"></a>
+        <nav class="navbar header__nav navbar-expand-sm">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="opciones">
+                    <ul class="header__list navbar-nav">
+                        <li class="header__item"><a class="header__anchor" href="../index.html">Inicio</a></li>
+                        <li class="header__item"><a class="header__anchor" href="./Biografia.html">Biografia</a></li>
+                        <li class="header__item"><a class="header__anchor" href="./Proyectos.html">Proyectos</a></li>
+                        <li class="header__item"><a class="header__anchor" href="#">Galeria</a></li>
+                        <li class="header__item"><a class="header__anchor" href="./Contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <h2 class="Titular Titular__centro">Galería</h2>
-    <section class="Galeria">
-        <div class="Galeria__img">
-            <img class="Galeria__foto" src="../img/FotoLulu2.jpg" alt="Foto muestra">
-            <img class="Galeria__foto" src="../img/FotoLulu1.jpg" alt="Foto muestra">
-            <img class="Galeria__foto" src="../img/FotoLulu3.jpg" alt="Foto muestra">
-            <img class="Galeria__foto" src="../img/FotoLulu4.jpg" alt="Foto muestra">
+    <section class="Galeria row container-fluid">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <img class="Galeria__img" src="../img/FotoLulu3_hr.jpg" alt="" data-aos="fade-left" data-aos-duration="1000">
+            <img class="Galeria__img" src="../img/Foto2LuisR_vr.jpg" alt="" data-aos="fade-up" data-aos-duration="1000">
+            <img class="Galeria__img" src="../img/Foto2Maria_hr.jpg" alt="" data-aos="fade-right" data-aos-duration="1000">
+            <img class="Galeria__img" src="../img/FotoJS.jpg" alt="" data-aos="fade-right" data-aos-duration="1000">
         </div>
-        <div class="Galeria__vid">
-            <video class="Galeria__vid1" src="../img/Milongadeandarlejos.mp4" controls></video>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <img class="Galeria__img" src="../img/FotoSTF_vr.jpg" alt="" data-aos="fade-left" data-aos-duration="1000">
+            <img class="Galeria__img" src="../img/FotoLuisR_hr.jpg" alt="" data-aos="fade-right" data-aos-duration="1000">
+            <img class="Galeria__img" src="../img/FotoErnesto_vr.jpg" alt="" data-aos="fade-up" data-aos-duration="1000">
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12  mb-4">
+            <img class="Galeria__img" src="../img/FotoLulu8_hr.jpg" alt="" data-aos="fade-left" data-aos-duration="1000">
+            <img class="Galeria__img" src="../img/Foto3STF_vr.JPG" alt="" data-aos="fade-left" data-aos-duration="1000">
+            <img class="Galeria__img" src="../img/FotoMaria_hr.jpg" alt="" data-aos="fade-up" data-aos-duration="1000">
+            <img class="Galeria__img" src="../img/FotoLulu6_vredit.jpg" alt="" data-aos="fade-up" data-aos-duration="1000">
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <img class="Galeria__img" src="../img/FotoLulu1_vr.jpg" alt="" data-aos="fade-right" data-aos-duration="1000">
+            <img class="Galeria__img" src="../img/Foto3LuisR_hr.jpg" alt="" data-aos="fade-up" data-aos-duration="1000">
+            <img class="Galeria__img" src="../img/Foto2STF_vr.JPG" alt="" data-aos="fade-left" data-aos-duration="1000">
         </div>
     </section>
-    <footer>
+    <section class="Galeria mb-4 container-fluid">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video class="Galeria__vid1" class="d-block w-100" src="../img/Milongadeandarlejos.mp4" controls>
+                </div>
+                <div class="carousel-item">
+                    <video class="Galeria__vid1" class="d-block w-100" src="../img/bajo_delarbol_untambor.mp4" controls>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <footer class="footer">
         <section class="footer__botones">
         <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
         <a  href="https://es-la.facebook.com/" class="fa-brands fa-youtube"></a>
         <a href="https://es-la.facebook.com/" class="fa-brands fa-facebook"></a>
         </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <div class="d-flex justify-content-center copy">
+        <p>© Mariajosegn - 2022</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

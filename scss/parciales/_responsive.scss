@@ -1,0 +1,142 @@
+@media screen and (max-width: 968px) {
+
+    .header{
+        flex-direction: column;
+
+        &__nav {
+            flex-wrap: wrap;
+        }
+    }
+
+    /*INDEX*/
+
+
+    .main{
+        padding-left: 4rem;
+
+        &__Titulo {
+            font-size: 2.5rem;
+        }
+    
+        &__contenido {
+            font-size: 1.3rem;
+        }
+    }
+
+    .Frase__texto {
+        font-size: 1rem;
+        padding: 1.5rem;
+        }
+    /*FIN INDEX*/
+
+    footer{
+        overflow: hidden;
+    }
+
+    /*BIOGRAFIA*/
+    .Bio {
+        padding: 2rem;
+        padding-bottom: 2rem;
+
+        &__img{
+            padding: 1rem;
+            max-width: 50%;
+        }
+    }
+    /*FIN BIO*/
+
+    /*PROYECTOS*/
+    .Proyectos {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        padding: 2rem;
+    }
+    /*FIN PROYECTOS*/
+
+    /*GALERIA*/
+    .Galeria{
+        overflow: hidden;
+    }
+    /*FIN GALERIA*/ 
+}
+
+@media screen and (max-width: 575px) {
+
+    .header{
+        flex-direction: row;
+
+        &__logo {
+            max-width: 15.75rem;
+        }
+
+        &__anchor{
+            font-size: 1rem;
+        }
+    }
+    
+    /*INDEX*/
+    
+    .main{
+        height: 35.25rem;
+        padding-left: 1rem;
+
+        &__hero {
+            padding-left: 2rem;
+            padding-right: 1rem;
+            height: 25rem;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        &__Titulo{
+            opacity: 0;
+        }
+
+        &__contenido {
+        font-size: 1.3rem;
+        color: black;
+        }
+    }
+        
+    .Frase{
+        height: 15rem;
+    }
+
+    /*FIN INDEX*/
+    
+    .footer{
+        flex-direction: column;
+        height: 4rem;
+        align-items: stretch;
+
+        &__botones {
+        min-width: 0rem;    
+        }
+    }
+
+    /*BIOGRAFIA*/
+
+    .Bio__flex{
+        flex-direction: column;
+    }
+
+    .Bio__img{
+        max-width: 100%;
+    }
+    /*FIN BIO*/
+
+    /*PROYECTOS*/
+    .Proyectos {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    /*FIN PROYECTOS*/
+
+    /*GALERIA*/
+    .Galeria__vid1{
+        width: 100%;
+        margin-left: 0;
+    }
+    /*FIN GALERIA*/
+}
+
+

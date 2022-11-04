@@ -1,0 +1,50 @@
+.Proyectos {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    padding: 3rem;
+
+    &__titulo{
+        text-align: center;
+    }
+
+    &__col1 {
+        @include proyectos-tarjeta
+    }
+
+    &__col2 {
+        @include proyectos-tarjeta
+    }
+
+    &__col3 {
+        @include proyectos-tarjeta
+    }
+
+    &__col4 {
+        @include proyectos-tarjeta
+    }
+
+    &__col5 {
+        @include proyectos-tarjeta
+    }
+
+    &__col6 {
+        @include proyectos-tarjeta
+    }
+
+    &__texto{
+        padding: 0.5rem;
+    }
+
+    &__img{
+        width: 100%;
+        padding: 0.5rem;
+        transition: transform .2s;
+
+        &:hover{
+            transform: scale(1.09);
+        }
+    }
+}
+

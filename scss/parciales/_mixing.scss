@@ -1,0 +1,6 @@
+@mixin proyectos-tarjeta {
+    background-color: $color-claro;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+}

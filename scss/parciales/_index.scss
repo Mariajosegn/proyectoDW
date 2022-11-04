@@ -1,0 +1,48 @@
+.main {
+    background: url("../../img/HERO.jpg")center/cover;
+    background-position: bottom;
+    height: 46.25rem;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+    
+    &__Titulo {
+        font-size: 3.13rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__contenido {
+        font-size: 1.88rem;
+        display: flex;
+        align-items: center;
+        font-weight: 21.88rem;
+    }
+
+    &__boton {
+        background-color: $color-claro;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        box-shadow: $box-shadow;
+    }
+
+    &__anchor{
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.Frase {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+
+    &__texto {
+        font-family: 'Noto Serif Malayalam', serif;
+        color: white;
+        font-size: 1.25rem;
+        padding: 1rem;
+    }
+}

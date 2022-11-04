@@ -1,0 +1,28 @@
+.Bio {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 3rem;
+    padding: 2.5rem; 
+    overflow: hidden;
+
+    &__flex{
+        background-color: $color-claro;
+        display: flex;
+        align-items: center;
+        box-shadow: $box-shadow;
+    }
+
+    &__reverse {
+        flex-direction: row-reverse;
+    }
+
+    &__img{
+        padding: 1rem;
+        max-width: 40%;
+    }
+
+    &__texto {
+    text-align: center;
+    padding:1rem;
+    }
+}
