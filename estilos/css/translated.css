@@ -14,9 +14,6 @@ body {
 
 .header {
   background-color: #d4a373;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0.56rem; }
   .header__logo {
     max-width: 18.75rem; }
@@ -82,18 +79,18 @@ body {
     background-color: #faedcd;
     font-family: Arial, Helvetica, sans-serif;
     border: none;
-    box-shadow: 5px 5px 5px #d4a373; }
+    padding: 0.5rem;
+    border-radius: 5%; }
+    .main__boton:hover, .main__boton:focus {
+      background-color: #a5907e;
+      color: #ccd5ae; }
   .main__anchor {
     color: black;
     text-decoration: none; }
 
 .Frase {
-  height: 10rem;
-  display: flex;
-  align-items: center; }
-  .Frase__texto {
-    font-family: 'Noto Serif Malayalam', serif;
-    color: white;
+  background-color: #faedcd; }
+  .Frase__contenido {
     font-size: 1.25rem;
     padding: 1rem; }
 
@@ -103,12 +100,12 @@ body {
   gap: 3rem;
   padding: 2.5rem;
   overflow: hidden; }
-  .Bio__flex {
+  .Bio__flex, .Bio__flex-reverse {
     background-color: #faedcd;
     display: flex;
     align-items: center;
     box-shadow: 5px 5px 5px #d4a373; }
-  .Bio__reverse {
+  .Bio__flex-reverse {
     flex-direction: row-reverse; }
   .Bio__img {
     padding: 1rem;
@@ -166,7 +163,8 @@ body {
 
 .Galeria {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
   .Galeria div {
     padding: 0; }
   .Galeria__img {
@@ -181,11 +179,22 @@ body {
 .Formulario {
   color: white; }
 
+.Contacto__boton {
+  background-color: #faedcd;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5%; }
+  .Contacto__boton:hover, .Contacto__boton:focus {
+    background-color: #a5907e;
+    color: #ccd5ae; }
+
 @media screen and (max-width: 968px) {
-  .header {
-    flex-direction: column; }
-    .header__nav {
-      flex-wrap: wrap; }
+  .header__nav {
+    flex-wrap: wrap; }
+    .header__nav div {
+      justify-content: center;
+      flex-direction: column; }
   /*INDEX*/
   .main {
     padding-left: 4rem; }
@@ -219,28 +228,30 @@ body {
   /*FIN GALERIA*/ }
 
 @media screen and (max-width: 575px) {
-  .header {
+  .header__nav div {
     flex-direction: row; }
-    .header__logo {
-      max-width: 15.75rem; }
-    .header__anchor {
-      font-size: 1rem; }
+  .header__logo {
+    max-width: 12rem; }
+  .header__anchor {
+    font-size: 1rem; }
+  .header__list li {
+    display: flex;
+    justify-content: center; }
   /*INDEX*/
   .main {
-    height: 35.25rem;
+    height: 40rem;
     padding-left: 1rem; }
     .main__hero {
       padding-left: 2rem;
       padding-right: 1rem;
-      height: 25rem;
-      background: rgba(255, 255, 255, 0.5); }
+      height: 25rem; }
     .main__Titulo {
-      opacity: 0; }
+      display: none; }
     .main__contenido {
       font-size: 1.3rem;
       color: black; }
   .Frase {
-    height: 15rem; }
+    height: 24rem; }
   /*FIN INDEX*/
   .footer {
     flex-direction: column;
@@ -249,7 +260,7 @@ body {
     .footer__botones {
       min-width: 0rem; }
   /*BIOGRAFIA*/
-  .Bio__flex {
+  .Bio__flex, .Bio__flex-reverse {
     flex-direction: column; }
   .Bio__img {
     max-width: 100%; }

@@ -12,7 +12,8 @@
         box-shadow: $box-shadow;
     }
 
-    &__reverse {
+    &__flex-reverse {
+        @extend .Bio__flex;
         flex-direction: row-reverse;
     }
 

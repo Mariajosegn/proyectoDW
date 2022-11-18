@@ -18,18 +18,18 @@
 </head>
 <body>
     <header class="header">
-        <a href="#"><img class="header__logo" src="./img/Imagenlogo.png" alt="Logo portafolio"></a>
         <nav class="navbar header__nav navbar-expand-sm">
             <div class="container-fluid">
+                <a href="#"><img class="header__logo navbar-brand" src="./img/Imagenlogo.png" alt="Logo portafolio"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="opciones">
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="opciones">
                     <ul class="header__list navbar-nav">
                         <li><a class="header__anchor" href="#">Inicio</a></li>
-                        <li><a class="header__anchor" href="./vistas/Biografia.html">Biografia</a></li>
+                        <li><a class="header__anchor" href="./vistas/Biografia.html">Biografía</a></li>
                         <li><a class="header__anchor" href="./vistas/Proyectos.html">Proyectos</a></li>
-                        <li><a class="header__anchor" href="./vistas/Galeria.html">Galeria</a></li>
+                        <li><a class="header__anchor" href="./vistas/Galeria.html">Galería</a></li>
                         <li><a class="header__anchor" href="./vistas/Contacto.html">Contacto</a></li>
                     </ul>
                 </div>
@@ -37,24 +37,42 @@
         </nav>
     </header>
     <main class="main container ">
-        <section class="main__hero col-md-5">
+        <section class="main__hero col-md-6">
             <div>
                 <h1 class="main__Titulo"> La danza y María José</h1>
             </div>
             <p class="main__contenido"> Bailarina formada en la compañía AzuDanza, donde comenzó su pasión por la danza desde los 5 años. Para María José, bailar significa la manera de ser auténtico y honesto consigo mismo, el momento donde el movimiento se convierte en el canal de comunicación directo desde el alma.</p>
             <div>
-                    <button class="main__boton"><a class="main__anchor" href="./vistas/Biografia.html">Seguir leyendo</a></button>
+                    <button class="main__boton"><a class="main__anchor" href="./vistas/Biografia.html">Conoce más</a></button>
             </div>
         </section>
-        <div class="col-md-7"></div>
+        <div class="col-md-6"></div>
     </main>
-    <section class="Frase container">
-        <p class="Frase__texto"><em> “Veo la danza siendo usada como comunicación entre el cuerpo y el alma, para expresar lo que es demasiado profundo, muy sutil para las palabras”. <br> – Ruth St. Denis</em></p>
-    </section>
+    <section>
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-12 col-lg-8">
+              <figure class="Frase p-4"
+                style="border-left: .35rem solid #D4A373; border-top: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                <i class="fas fa-quote-left fa-2x" style="color: #D4A373;"></i>
+                <blockquote class="blockquote pb-2 Frase__contenido">
+                  <p>
+                    No, no puedo explicarte la danza; si pudiera decirte lo que quiere decir, no habría ninguna razón para bailarla.
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer mb-0">
+                  <cite title="Source Title">Isadora Duncan</cite>
+                </figcaption>
+              </figure>
+      
+            </div>
+          </div>
+        </div>
+      </section>
     <footer class="footer">
         <section class="footer__botones">
         <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
-        <a  href="https://es-la.facebook.com/" class="fa-brands fa-youtube"></a>
+        <a  href="https://www.youtube.com/" class="fa-brands fa-youtube"></a>
         <a href="https://es-la.facebook.com/" class="fa-brands fa-facebook"></a>
         </section>
     </footer>

@@ -5,3 +5,12 @@
 .Formulario{
     color: white;
 }
+
+.Contacto__boton{
+        @include boton;
+        &:hover,
+        &:focus{
+            background-color: $color-oscuro;
+            color:rgb(204, 213, 174);
+        }
+    }

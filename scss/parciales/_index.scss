@@ -22,10 +22,12 @@
     }
 
     &__boton {
-        background-color: $color-claro;
-        font-family: Arial, Helvetica, sans-serif;
-        border: none;
-        box-shadow: $box-shadow;
+        @include boton;
+        &:hover,
+        &:focus{
+            background-color: $color-oscuro;
+            color:rgb(204, 213, 174);
+        }
     }
 
     &__anchor{
@@ -35,13 +37,9 @@
 }
 
 .Frase {
-    height: 10rem;
-    display: flex;
-    align-items: center;
+    background-color: $color-claro;
 
-    &__texto {
-        font-family: 'Noto Serif Malayalam', serif;
-        color: white;
+    &__contenido{
         font-size: 1.25rem;
         padding: 1rem;
     }
